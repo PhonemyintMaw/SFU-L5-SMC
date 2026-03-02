@@ -37,7 +37,7 @@
             </li>
 
             <li>
-              <a class="nav-link active" aria-current="page" href="./home.php">Home</a>
+              <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
             </li>
 
             <li>
@@ -113,7 +113,7 @@
 
         <div class="right-section">
 
-          <a class="brand" href="./home.php">SMC LTD</a>
+          <a class="brand" href="./index.php">SMC LTD</a>
     
         </div>
 
@@ -122,7 +122,7 @@
               <ul class="navbar-nav">
 
                 <li class="nav-item hideOnMobile">
-                  <a class="nav-link active" aria-current="page" href="./home.php">Home</a>
+                  <a class="nav-link active" aria-current="page" href="./index.php">Home</a>
                 </li>
 
                 <li class="nav-item hideOnMobile">
