@@ -1,0 +1,246 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: white;
+    font-family: 'Poppins';
+}
+
+
+/* Navigation Bar*/
+
+#nav-upper{
+    position: fixed;
+    display:grid;
+    grid-template-columns: 1fr 7fr;
+
+    background-color: white;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    box-shadow: 0px 1px 20px rgb(86, 86, 86);
+}
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-link:hover{
+    color:  black;
+}
+.right-section{
+    display: flex;
+    align-items: center;
+    margin: auto 30px;
+}
+.right-section .brand{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.brand:hover{
+    color: grey;
+    cursor: pointer;
+    transition: .3s;
+}
+.left-section{
+    display: flex;
+    margin: 0 30px;
+    align-items: center;
+}
+.nav-item{
+    padding: 0 10px;
+    color: black;
+    font-weight: 500;
+}
+.nav-item:hover{
+    color: gray;
+    cursor: pointer;
+}
+.about-us{
+    padding-left: 30px;
+}
+.about-link{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+
+.about-link:hover{
+    color: grey;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+/* SIDE BAR */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sidebar-nav-li li{
+    list-style-type: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 50px;
+}
+.sidebar-nav-li a{  
+    height: 100%;
+    padding: 0 30px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.sidebar-nav-li .dropdown .dropdown-menu{
+    background-color: rgba(130, 130, 130, 0.6);
+    backdrop-filter: blur(50px);
+}
+.sidebar-nav-li a:hover{
+    color: gray;
+    transition: 0.3s;
+}
+.sidebar-drop-link{
+    color: black;
+}
+.about-us-sidebar{
+    display: flex;
+
+}
+.menu-button{
+    display: none;
+}
+.close-btn{
+    margin-top: 15px;
+}
+
+
+/* FOOTER */
+
+#foot{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.8);;
+}
+#foot h2{
+    margin: 20px auto 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#foot h3 span{
+    font-weight: bold;
+}
+.media-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 35px;
+}
+.media-list form{
+    margin: 0;
+    padding: 0;
+}
+.media-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: auto 15px;
+    background-color: white;
+    border-radius: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    transition: .2s;
+    padding: 0;
+}
+.media-btn:hover{
+    cursor: pointer;
+    filter: invert(1);
+    transform: scale(1.2);
+}
+.media-icon{
+    height: 30px;
+}
+
+
+/* Copyright */
+
+.copy-right{
+    display: flex;
+    border-top: 1px solid rgba(225, 225, 225, 1);  
+}
+.copy-right p{
+    font-size: 13px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+
+/*For Navigation and Side Bar*/
+
+@media screen and (max-width: 1430px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media screen and (max-width: 1330px) {
+    #nav-upper{
+        grid-template-columns: 10fr 1fr;
+    }
+}
+@media(max-width: 800px){
+    #foot h2{
+        font-size: 15px;
+    }
+    #foot h3{
+        font-size: 15px;
+        text-align: center;
+    }
+}
+@media(max-width: 780px) {
+    #nav-upper{
+        display: flex;
+        width: 100%;
+    }
+    .right-section{
+        display: none;
+    }
+    .left-section ul{
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+@media(max-width: 600px){
+    .sidebar{
+        width: 70%;
+    }
+}
+@media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+}

@@ -1,0 +1,327 @@
+body{
+    background-color: white;
+    margin: 0;
+    font-family: 'Poppins';
+}
+p{
+    font-size: 15px;
+}
+.content-link{
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+}
+.content-link:hover{
+    color: rgb(10, 46, 164);
+    transition: .3s;
+}
+
+
+/* Header Pic */
+
+#head{
+    background-image: url(../pic/two-people.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    min-height: 100vh;
+    width: 100%;
+    top: 60px;
+}
+#head::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: -2;
+}
+.head-title h2{   
+    display: block;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    font-family: 'Poppins';
+}
+
+
+/* Overall Content */
+
+#content{
+    background-color: white;
+    z-index: 3;
+    position: relative;
+    margin-top: 820px;
+    padding: 30px 100px 60px 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Search Bar */
+
+.searchbar{
+   padding: 60px 0;
+}
+.form-inline{
+    display: flex;
+    justify-content: center;
+}
+.form-inline input{
+    border: 2px solid #0d6efd;
+    width: 800px;
+    height: 50px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+.form-inline button{
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+hr{
+    padding: 30px 0;
+}
+.sect{
+    padding-top: 10px;
+}
+.p-span{
+    padding-left: 50px;
+}
+
+/* Search Results */
+
+.search-results{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.search-results h2{
+    padding: 30px;
+}
+.search-results li{
+    list-style: none;
+    padding: 10px;
+}
+.search-results li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.search-results li a:hover{
+    color: rgb(104, 143, 249);
+}
+.search-results ul{
+    background-color: #252525;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Social Media */
+
+.segment{
+    display: flex;
+    justify-content: center;
+}
+.social-media, .safe, .safety-advices, .teenage-brain-content{
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 15px;
+    padding: 40px 30px;
+    margin-bottom: 60px;
+    width: 1000px;
+}
+.social-media-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.s-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.s-icon:hover{
+    cursor: pointer;
+}
+.social-media-icons img{
+    width: 150px;
+}
+
+/* How To Stay Safe */
+
+.safe-list{
+    font-size: 20px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.safe-list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.safe-list-item h5{
+    margin-bottom: 20px;
+}
+.safe-list-item img{
+    height: 200px;
+}
+
+
+/* Subscribe */
+
+.subscribe{
+    border-radius: 30px;
+    padding: 40px 60px;
+    width: 600px;
+    background-image: url(../pic/guy-on-plane.jpg);
+    position: relative;
+    z-index: 1;
+    justify-content: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+    transition: .2s;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.subscribe::after{
+    content: '';
+    background-color: black;
+    border-radius: 30px;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.subscribe:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 3px 8px black;   
+}
+.subscribe h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.subscribe p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.sub-btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+.sub-btn button{
+    border: 5px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+/*Size Adjustment*/
+
+@media(max-width: 800px){
+
+    #content{
+        padding: 10px;
+    }
+    .head-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .head-title h2{   
+        font-size: 2rem;
+    }
+    .social-media-icons{
+        grid-template-columns: 1fr 1fr;
+    }
+    .s-icon{
+        margin: 15px;
+    }
+    
+
+}
+@media(max-width: 660px){
+    .head-title{
+        display: block;
+    }
+    .head-title h2{   
+        font-size: 1.5rem;
+    }
+    .social-media-icons{
+        grid-template-columns: 1fr;
+    }
+    .social-media-icons img{
+        width: 130px;
+    }
+    .safe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 99%;
+        padding: 20px;
+    }
+
+}
+@media(max-width: 580px){
+
+    .form-inline{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   .form-inline input{
+    width: 200px;
+    height: 40px;
+   }
+   .form-inline button{
+    height: 40px;
+    font-size: 10px;
+   }
+   .social-media h2, .teenage-brain-content h2, .safe h2{
+    font-size: 20px;
+   }
+   .social-media p, .teenage-brain-content p, .safe p, .subscribe p{
+    font-size: 12px;
+    text-align: justify;
+   }
+   .safe-list{
+    grid-template-columns: 1fr;
+   }
+}
+@media(max-width: 460px){
+    .safe{
+
+        width: 400px;
+        margin: 5px;
+        
+    }
+}

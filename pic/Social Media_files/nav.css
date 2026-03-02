@@ -1,0 +1,115 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: white;
+    font-family: 'Poppins';
+}
+
+#nav-upper{
+    position: fixed;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: white;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    box-shadow: 0px 1px 20px rgb(86, 86, 86);
+}
+
+ul .navbar-nav{
+   justify-content: center;
+   align-items: center;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-section .brand{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.brand:hover{
+    color: grey;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item{
+    padding: 0 30px;
+    color: black;
+    font-weight: 500;
+}
+
+.nav-item:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.about-link{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 25px;
+    color: black;
+}
+
+.about-link:hover{
+    color: grey;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+@media screen and (max-width: 1160px){
+
+    #nav-upper{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px 0 10px;
+    }
+
+    .navbar-expand-lg{
+        display: flex;
+    }
+
+   
+}
+
+@media screen and (max-width: 991.82px) {
+    
+  
+    .nav-item{
+        font-size: 12px;
+        text-align: center;
+        padding: 0;
+    }
+
+
+    .right-section .brand, .about-us .about-link{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .left-section .navbar-nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    
+}

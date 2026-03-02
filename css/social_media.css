@@ -1,0 +1,150 @@
+#content{
+    margin-top: 61px;
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    text-align: justify;
+}
+
+/* HEAD SECTION */
+
+.head-pic, .searchbar, .searchbar-sec, .social-content{
+    display: flex;
+}
+.searchbar{
+    flex-direction: column;
+}
+.head-pic, .searchbar, .social-content{
+    align-items: center;
+    justify-content: center;
+}
+#result{
+    background-color: white;
+    padding: 10px;
+}
+.result-link{
+    text-decoration: none;
+}
+.head-pic{
+    height: 100vh;
+    background-image: url(../pic/social-media.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.searchbar{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    height: 50%;
+}
+.searchbar-header{
+    margin-bottom: 40px;
+}
+.searchbar-sec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.searchbar-sec input{
+    height: 50px;
+}
+
+
+/* CONTENT SECTION */
+
+.social-content{
+    flex-direction: column;
+}
+.social-content .header h1{
+    margin: 100px;
+}
+.social-apps{
+    width: 80%;
+}
+.social-apps-content .socialapp-body .what-is{
+    display: flex;
+}
+.social-apps-content{
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+.socialapp-head h2{
+    margin-bottom: 30px;
+}
+.image-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.what-is img{
+    width: 200px;
+    padding-right: 50px;
+}
+.socialapp-body hr{
+    margin: 50px 40px;
+}
+
+.facebook{
+    color: rgb(42, 99, 173);
+}
+.instagram{
+    color: rgb(255, 0, 119);
+}
+.twitter{
+    color: rgb(0, 160, 228);
+}
+.youtube{
+    color: rgb(211, 1, 1);
+}
+.linkedin{
+    color: rgb(42, 138, 255);
+}
+.tiktok{
+    color: rgb(38, 38, 38);
+}
+
+
+@media(max-width: 800px){
+    .searchbar-header h1{
+        margin: 10px;
+    }
+    .searchbar-sec input{
+        width: auto;
+        height: 40px;
+    }
+    .searchbar-sec button{
+        height: 40px;
+    }
+    .what-is{
+        flex-direction: column;
+    }
+    .what-is img{
+        padding: 0 0 50px 0;
+    }
+
+}
+@media(max-width: 600px){
+    .social-content .header h1{
+        margin: 50px 30px ;
+    }
+    .searchbar-header h1{
+        margin: 10px;
+    }
+    .searchbar{
+        width: 90%;
+        height: 50%;
+    }
+}
+@media(max-width: 500px){
+    .searchbar-sec input{
+        width: 70%;
+    }
+    p{
+        font-size: 12px;
+    }
+    .what-is img{
+        width: 150px;
+    }
+}
