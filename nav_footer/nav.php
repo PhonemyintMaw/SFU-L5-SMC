@@ -113,7 +113,7 @@
 
         <div class="right-section">
 
-          <a class="brand" href="./home.php">SMC LTD</a>
+          <a class="brand" href="./index.php">SMC LTD</a>
     
         </div>
 
